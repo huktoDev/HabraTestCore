@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6BE809BD1EC1EDB80035E1ED /* HabraTestProjectCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE809BB1EC1EDB80035E1ED /* HabraTestProjectCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0DF6CC291DB974C5BC827B3 /* Pods_HabraTestProjectCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5CF14444D505F5E8905D2 /* Pods_HabraTestProjectCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11BF221EC491EECBA47941AA /* Pods-HabraTestProjectCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabraTestProjectCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabraTestProjectCore/Pods-HabraTestProjectCore.debug.xcconfig"; sourceTree = "<group>"; };
 		6BE809B81EC1EDB80035E1ED /* HabraTestProjectCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HabraTestProjectCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE809BB1EC1EDB80035E1ED /* HabraTestProjectCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabraTestProjectCore.h; sourceTree = "<group>"; };
 		6BE809BC1EC1EDB80035E1ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E40E93145AFAEBCCDAF5189 /* Pods-HabraTestProjectCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabraTestProjectCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabraTestProjectCore/Pods-HabraTestProjectCore.release.xcconfig"; sourceTree = "<group>"; };
+		C3F5CF14444D505F5E8905D2 /* Pods_HabraTestProjectCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabraTestProjectCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +25,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DF6CC291DB974C5BC827B3 /* Pods_HabraTestProjectCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22FB638852D4834CFD215716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5CF14444D505F5E8905D2 /* Pods_HabraTestProjectCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BE809AE1EC1EDB80035E1ED = {
 			isa = PBXGroup;
 			children = (
 				6BE809BA1EC1EDB80035E1ED /* HabraTestProjectCore */,
 				6BE809B91EC1EDB80035E1ED /* Products */,
+				96B0EE99E7F91FE9DB25B7DA /* Pods */,
+				22FB638852D4834CFD215716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +75,15 @@
 			path = HabraTestAggregatedProject;
 			sourceTree = "<group>";
 		};
+		96B0EE99E7F91FE9DB25B7DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11BF221EC491EECBA47941AA /* Pods-HabraTestProjectCore.debug.xcconfig */,
+				6E40E93145AFAEBCCDAF5189 /* Pods-HabraTestProjectCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -78,10 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BE809C01EC1EDB80035E1ED /* Build configuration list for PBXNativeTarget "HabraTestProjectCore" */;
 			buildPhases = (
+				8B8E29351FFE2CFD621D8525 /* [CP] Check Pods Manifest.lock */,
 				6BE809B31EC1EDB80035E1ED /* Sources */,
 				6BE809B41EC1EDB80035E1ED /* Frameworks */,
 				6BE809B51EC1EDB80035E1ED /* Headers */,
 				6BE809B61EC1EDB80035E1ED /* Resources */,
+				256A34432B3E10683C966FC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		256A34432B3E10683C966FC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabraTestProjectCore/Pods-HabraTestProjectCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8E29351FFE2CFD621D8525 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6BE809B31EC1EDB80035E1ED /* Sources */ = {
@@ -243,6 +302,7 @@
 		};
 		6BE809C11EC1EDB80035E1ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BF221EC491EECBA47941AA /* Pods-HabraTestProjectCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -260,6 +320,7 @@
 		};
 		6BE809C21EC1EDB80035E1ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E40E93145AFAEBCCDAF5189 /* Pods-HabraTestProjectCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
