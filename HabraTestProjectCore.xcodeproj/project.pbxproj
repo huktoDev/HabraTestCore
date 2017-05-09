@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B6D361B1EC1FF4600A45F9A /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6D36191EC1FF4600A45F9A /* TestView.h */; };
+		6B6D361C1EC1FF4600A45F9A /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D361A1EC1FF4600A45F9A /* TestView.m */; };
 		6BE809BD1EC1EDB80035E1ED /* HabraTestProjectCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE809BB1EC1EDB80035E1ED /* HabraTestProjectCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0DF6CC291DB974C5BC827B3 /* Pods_HabraTestProjectCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5CF14444D505F5E8905D2 /* Pods_HabraTestProjectCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11BF221EC491EECBA47941AA /* Pods-HabraTestProjectCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabraTestProjectCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabraTestProjectCore/Pods-HabraTestProjectCore.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6D36191EC1FF4600A45F9A /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		6B6D361A1EC1FF4600A45F9A /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		6BE809B81EC1EDB80035E1ED /* HabraTestProjectCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HabraTestProjectCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE809BB1EC1EDB80035E1ED /* HabraTestProjectCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabraTestProjectCore.h; sourceTree = "<group>"; };
 		6BE809BC1EC1EDB80035E1ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		6BE809C31EC1EE220035E1ED /* HabraTestAggregatedProject */ = {
 			isa = PBXGroup;
 			children = (
+				6B6D36191EC1FF4600A45F9A /* TestView.h */,
+				6B6D361A1EC1FF4600A45F9A /* TestView.m */,
 			);
 			path = HabraTestAggregatedProject;
 			sourceTree = "<group>";
@@ -92,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BE809BD1EC1EDB80035E1ED /* HabraTestProjectCore.h in Headers */,
+				6B6D361B1EC1FF4600A45F9A /* TestView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -198,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6D361C1EC1FF4600A45F9A /* TestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +363,7 @@
 				6BE809C21EC1EDB80035E1ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
